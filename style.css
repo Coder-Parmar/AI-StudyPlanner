@@ -1,0 +1,206 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+    padding:30px;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+}
+
+/* Main Container */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* Cards */
+
+.task-form,
+.task-list,
+.progress{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* Progress spans full width */
+
+.progress{
+    grid-column:1 / span 2;
+}
+
+/* Headings */
+
+h2{
+    margin-bottom:18px;
+    color:#333;
+}
+
+/* Inputs */
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+    transition:.3s;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#4facfe;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:14px;
+    background:#4facfe;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+button:hover{
+    background:#008cff;
+    transform:translateY(-2px);
+}
+
+/* Task Card */
+
+.task-card{
+    background:#f8f9fa;
+    border-left:6px solid #4facfe;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.task-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.task-card h3{
+    color:#333;
+    margin-bottom:8px;
+}
+
+.task-card p{
+    color:#555;
+    margin:4px 0;
+    font-size:15px;
+}
+
+/* Buttons inside task */
+
+.task-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.task-buttons button{
+    flex:1;
+    padding:10px;
+    font-size:14px;
+}
+
+.delete-btn{
+    background:#ff4d4d;
+}
+
+.delete-btn:hover{
+    background:#d93636;
+}
+
+.complete-btn{
+    background:#28a745;
+}
+
+.complete-btn:hover{
+    background:#1f8737;
+}
+
+/* Progress Bar */
+
+progress{
+    width:100%;
+    height:28px;
+    margin-top:10px;
+}
+
+#progressText{
+    text-align:center;
+    margin-top:10px;
+    font-size:20px;
+    font-weight:bold;
+    color:#333;
+}
+
+/* Priority Labels */
+
+.high{
+    color:#d62828;
+    font-weight:bold;
+}
+
+.medium{
+    color:#ff8800;
+    font-weight:bold;
+}
+
+.low{
+    color:#2a9d8f;
+    font-weight:bold;
+}
+
+#Ailink{
+    text-align:center;
+    width:100%;
+    padding:14px;
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+    font-weight:bold
+
+}
+

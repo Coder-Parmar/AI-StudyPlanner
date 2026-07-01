@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>AI Study Planner</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📚 AI Study Planner</h1>
+
+</header>
+
+<div class="container">
+
+<div class="task-form">
+
+<h2>Add Study Task</h2>
+
+<input
+type="text"
+id="subject"
+placeholder="Subject">
+
+<input
+type="text"
+id="topic"
+placeholder="Topic">
+
+<input
+type="number"
+id="hours"
+placeholder="Study Hours">
+
+<select id="priority">
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+<button onclick="addTask()">
+
+Add Task
+
+</button>
+
+</div>
+
+<div class="task-list">
+
+<h2>Your Tasks</h2>
+
+<div id="taskContainer">
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<h2>Today's Progress</h2>
+
+<progress
+id="progressBar"
+value="0"
+max="100">
+</progress>
+
+<p id="progressText">
+
+0%
+
+</p>
+
+   
+</div>
+<p id="Ailink">
+    Generate your Study Planner here<br>
+    <a href="https://udify.app/workflow/02Wu1IUn35Xb15aI">Go</a>
+</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
